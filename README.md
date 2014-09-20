@@ -1,6 +1,6 @@
-# RakeOnRack
+# Rake on Rack
 
-Rake on Rack.
+Rake on Rack provides a HTTP interface to execute a given Rakefile's tasks.
 
 ## Installation
 
@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'rake_on_rack'
+
+RakeOnRack.start path_to_rakefile, port
+```
+
+Just make a POST request to /task_name - the request body string is passed to
+the task as arguments.
 
 ## Contributing
 

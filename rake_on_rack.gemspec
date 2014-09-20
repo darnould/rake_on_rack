@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "rake", "~> 10.3"
   spec.add_runtime_dependency "rack", "~> 1.5"
+  spec.add_runtime_dependency "thin"
 end
